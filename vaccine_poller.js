@@ -1,6 +1,6 @@
 // https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=395&date=12-05-2021
 
-const MUMBAI_DISTRICT_ID = 395;
+const DISTRICT_ID = 395; // Mumbai
 const MINIMUM_AGE_LIMIT = 18;
 const CHECK_INTERVAL = 10; // Seconds
 
@@ -21,7 +21,7 @@ function GetVaccInfo(){
   const options = {
     hostname: 'cdn-api.co-vin.in',
     port: 443,
-    path: '/api/v2/appointment/sessions/public/findByDistrict?district_id='+ MUMBAI_DISTRICT_ID +'&date=' + DATE_STR,
+    path: '/api/v2/appointment/sessions/public/findByDistrict?district_id='+ DISTRICT_ID +'&date=' + DATE_STR,
     method: 'GET'
   }
 
